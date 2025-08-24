@@ -1,14 +1,13 @@
-# Retro-1990s-roblox-stufff-stylus
-
 /* ==UserStyle==
-@name           Roblox — 1990s Retro Theme
-@namespace      github.com/openstyles/stylus
-@version        1.0.2
-@description    A neon retro 90s style theme for Roblox
-@preprocessor   default
+@name        Roblox — 1990s Retro Theme
+@namespace   github.com/openstyles/stylus
+@version     1.0.2
+@description A neon retro 90s style theme for Roblox
+@preprocessor default
 ==/UserStyle== */
 
 @-moz-document domain("roblox.com") {
+
     :root {
         --retro-bg: #0b001a; /* deep dark purple */
         --retro-panel: rgba(30, 10, 60, 0.9);
@@ -34,7 +33,11 @@
     }
 
     /* Panels (navbar, cards, etc.) */
-    .navbar, .content, .game-card, .profile-header, .rbx-upgrade-now {
+    .navbar,
+    .content,
+    .game-card,
+    .profile-header,
+    .rbx-upgrade-now {
         background: var(--retro-panel) !important;
         border: 3px solid var(--retro-border);
         border-radius: 0px; /* retro = blocky */
@@ -42,26 +45,36 @@
     }
 
     /* Retro glowing links & buttons */
-    a, button {
+    a,
+    button {
         color: var(--retro-text) !important;
         text-shadow: 0 0 8px var(--retro-accent2), 0 0 16px var(--retro-accent);
         transition: all 0.2s ease-in-out;
         font-weight: bold;
     }
-    a:hover, button:hover {
+
+    a:hover,
+    button:hover {
         color: var(--retro-accent2) !important;
         text-shadow: 0 0 10px var(--retro-accent), 0 0 20px var(--retro-accent2);
         transform: scale(1.05);
     }
 
     /* Sidebar (left navigation) */
-    .left-col, .navigation, .rbx-left-col, #navigation, .navbar-left {
+    .left-col,
+    .navigation,
+    .rbx-left-col,
+    #navigation,
+    .navbar-left {
         background: var(--retro-panel) !important;
         border-right: 3px solid var(--retro-border) !important;
         box-shadow: 4px 0 12px var(--retro-accent);
     }
 
-    .left-col a, .navigation a, .rbx-left-col a, #navigation a {
+    .left-col a,
+    .navigation a,
+    .rbx-left-col a,
+    #navigation a {
         display: block;
         padding: 6px 12px; /* reduced spacing */
         font-family: "Press Start 2P", monospace, sans-serif !important;
@@ -70,7 +83,10 @@
         transition: all 0.2s ease-in-out;
     }
 
-    .left-col a:hover, .navigation a:hover, .rbx-left-col a:hover, #navigation a:hover {
+    .left-col a:hover,
+    .navigation a:hover,
+    .rbx-left-col a:hover,
+    #navigation a:hover {
         background: var(--retro-accent) !important;
         color: #000 !important;
         text-shadow: none;
@@ -78,7 +94,8 @@
     }
 
     /* Sidebar section headers */
-    .left-col .section, .navigation .section {
+    .left-col .section,
+    .navigation .section {
         font-size: 11px;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -93,10 +110,12 @@
         width: 14px;
         height: 14px;
     }
+
     ::-webkit-scrollbar-thumb {
         background: var(--retro-accent);
         border: 2px solid var(--retro-border);
     }
+
     ::-webkit-scrollbar-track {
         background: #1a0033;
     }
